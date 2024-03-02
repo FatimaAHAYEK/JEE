@@ -28,8 +28,9 @@
               <label for="Password">Password</label>
               <input type="Password" name="Password" placeholder="Password"></br>
 
-              Genre<input type="radio" name="check" id="homme">Homme<br>
-                   <input type="radio" name="check" id="femme">Femme
+           Genre<input type="radio" value="Monsieur" name="check" id="homme">Homme<br>
+           <input type="radio" value="Madame" name="check" id="femme">Femme
+
 
            </br>
               Paye <select name="pays" id="pays">
