@@ -14,6 +14,8 @@ public class TableMultiplicationServlet extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         //  Génération d'un tableau HTML avec les résultats de multiplication
+        out.println("<body>");
+        out.println("<h1>Table Multiplication </h1>");
         out.println("<table border='1'>");
 
         // Ligne d'en-tête avec X en gras sur fond jaune
