@@ -15,9 +15,11 @@ public class Servletcompture extends HttpServlet {
     public void init() throws ServletException{
         compteur=0;
     }
+    // utiliser pour gerer les reqs Http de type doGet
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
      //spécifier le type de contenu de la reponse
         response.setContentType("test/html");
+       // creer un objet Printwriter pour une reponse
         PrintWriter out = response.getWriter();
         compteur++;
         out.println("depuis son charegement en accédé a cette servlet " +compteur+ "fois");
